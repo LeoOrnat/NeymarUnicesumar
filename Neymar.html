@@ -18,15 +18,16 @@
       /*Estilo Cabecalho*/
       header {
          width: 100%;
-        padding: 20px;
+        padding: 10px;
         text-align: center;
         color: white;
-        background: linear-gradient(to right, #ffffff, #000000); /* Degradê da esquerda para a direita */
+        background: linear-gradient(to right, #000000, #ffffff, #000000); /* Degradê da esquerda para a direita */
     }
       /*estilo foto santos */
       .fotosantos {
          width: 200px;
          height: 200px;
+         border-radius: 10px;
       }
       h1 {
          color: rgba(0, 0, 0, 0.982);
@@ -59,11 +60,25 @@
       h2 {
          color: rgb(0, 0, 0);
       }
-      /*Imagem*/
-      img {
-         margin: 40px 0;
-         width: 40%;
-      }
+      .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 200px; /* Ajuste conforme necessário */
+            height: 150px;
+            object-fit: cover; /* Mantém a proporção da imagem */
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+        }
       /*Estilo Texto*/
       p {
          text-align: center;
@@ -86,17 +101,23 @@
          class="fotosantos">
    </header>
    <nav>
+      <a href="Neymar.html"> <button class="btnnav"> MENU</button></a>
       <a href="login.html">
          <button class="btnnav"> CADASTRO</button> </a>
-      <a href="#"> <button class="btnnav"> MENU</button></a>
       <a href="#"> <button class="btnnav"> ASSINATURA</button></a>
-      <a href="#"> <button class="btnnav"> INSTAGRAM </button></a>
-      <a href="#"> <button class="btnnav"> FACEBOOK </button></a>
-      <a href="#"> <button class="btnnav"> TWITTER </button></a>
+      <a href="https://www.instagram.com/neymarjr/" target="_blank"> <button class="btnnav"> INSTAGRAM </button></a>
+      <a href="https://www.facebook.com/neymarjr/" target="_blank"> <button class="btnnav"> FACEBOOK </button></a>
+      <a href="https://x.com/neymarjr" target="_blank"> <button class="btnnav"> TWITTER </button></a>
    </nav>
    <h2>O PRINCIPE ESTA DE VOLTA!</h2>
-   <img src="https://content.money.com/wp-content/uploads/2018/06/neymar-santos-jr-net-worth.jpg?quality=60"
-      alt="EasterEggBolsonaro">
+   <div class="gallery">
+      <img src=https://i.pinimg.com/736x/2e/58/82/2e58825906d506ed66a0bf496045eafe.jpg alt="Foto 1">
+      <img src=https://wallpapercave.com/wp/wp2025883.jpg alt="Foto 2">
+      <img src=https://i.pinimg.com/originals/1a/2e/4f/1a2e4fcf08a4d2da8f423625e86c6b83.jpg alt="Foto 3">
+      <img src=https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/08/neymar_al_hilal.jpg alt="Foto 4">
+      <img src=https://www.mktesportivo.com/wp-content/uploads/2025/01/neymar-santos-marcas.jpg alt="Foto 5">
+      
+  </div>
    <h2>Trajetoria</h2>
       <p>
       Neymar começou sua carreira no Santos, onde conquistou a Libertadores em 2011 e se destacou como um dos melhores jovens do mundo. Em 2013, transferiu-se para o Barcelona, formando o histórico trio MSN com Messi e Suárez, vencendo a Champions League em 2015. Em 2017, tornou-se a transferência mais cara da história ao assinar com o PSG, onde ganhou múltiplos títulos franceses. Em 2023, deixou a Europa e assinou com o Al-Hilal, na Arábia Saudita. Além disso, é um dos maiores artilheiros da Seleção Brasileira, sendo peça-chave em Copas do Mundo e na conquista do ouro olímpico em 2016.
